@@ -19,14 +19,28 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
 
-  <body>
-    <header>
-      <!-- place navbar here -->
-    </header>
-    <main></main>
-    <footer>
-      <!-- place footer here -->
-    </footer>
+  <body class="bg-light">
+    <main class="container py-4">
+        <div class="row justify-content-center">
+            <div class="col-12 col-sm-10 col-md-7 col-lg-5 col-xl-4">
+                <div class="card shadow-sm">
+                    <div class="card-body p-3 p-md-4">
+                        <div class="d-flex align-items-center justify-content-between mb-3">
+                            <h1 class="h5 mb-0">mr, claculrot r</h1>
+                            <span class="badge text-bg-secondary text-wrap">H Adv Web Design 2 - 2025/2026</span>
+                        </div>
+                        <!-- Calculator display -->
+                         <div class="calc-display rounded p-3 mb-3">
+                            <div id="historyLine" class="calc-history text-end small"></div>
+                            <div id="displayLine" class="calc-main text-end fw-semibold">0</div>
+                            <div id="statusLine" class="calc-status small mt-1"></div>
+                         </div>
+                         <!-- Calculator buttons -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
     <!-- Bootstrap JavaScript Libraries -->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
