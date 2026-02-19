@@ -28,7 +28,7 @@
               <div
                 class="d-flex align-items-center justify-content-between mb-3"
               >
-                <h1 class="h5 mb-0">mr, claculrot r</h1>
+                <h1 class="h5 mb-0"> calculator </h1>
                 <span class="badge text-bg-secondary text-wrap"
                   >H Adv Web Design 2 - 2025/2026</span
                 >
@@ -43,71 +43,73 @@
               </div>
 
               <!-- Calculator buttons -->
-              <div class="row g-2 mb-2">
-                <div class="col-3">
-                  <button class="btn btn-outline-danger w-100">C</button>
+              <div class="container-fluid px-0">
+                <div class="row g-2 mb-2">
+                  <div class="col-3">
+                    <button class="btn btn-outline-danger w-100" onclick="clearAll()">C</button>
+                  </div>
+                  <div class="col-3">
+                    <button class="btn btn-outline-secondary w-100" onclick="backspace()">⌫</button>
+                  </div>
+                  <div class="col-3">
+                    <button class="btn btn-outline-secondary w-100" onclick="toggleSign()">+/-</button>
+                  </div>
+                  <div class="col-3">
+                    <button class="btn btn-outline-primary w-100" onclick="pressOperator('/')">÷</button>
+                  </div>
                 </div>
-                <div class="col-3">
-                  <button class="btn btn-outline-secondary w-100">⌫</button>
+                <div class="row g-2 mb-2">
+                  <div class="col-3">
+                    <button class="btn btn-light w-100" onclick="pressNumber('7')">7</button>
+                  </div>
+                  <div class="col-3">
+                    <button class="btn btn-light w-100" onclick="pressNumber('8')">8</button>
+                  </div>
+                  <div class="col-3">
+                    <button class="btn btn-light w-100" onclick="pressNumber('9')">9</button>
+                  </div>
+                  <div class="col-3">
+                    <button class="btn btn-outline-primary w-100" onclick="pressOperator('*')">×</button>
+                  </div>
                 </div>
-                <div class="col-3">
-                  <button class="btn btn-outline-secondary w-100">+/-</button>
+                <div class="row g-2 mb-2">
+                  <div class="col-3">
+                    <button class="btn btn-light w-100" onclick="pressNumber('4')">4</button>
+                  </div>
+                  <div class="col-3">
+                    <button class="btn btn-light w-100" onclick="pressNumber('5')">5</button>
+                  </div>
+                  <div class="col-3">
+                    <button class="btn btn-light w-100" onclick="pressNumber('6')">6</button>
+                  </div>
+                  <div class="col-3">
+                    <button class="btn btn-outline-primary w-100" onclick="pressOperator('-')">-</button>
+                  </div>
                 </div>
-                <div class="col-3">
-                  <button class="btn btn-outline-primary w-100">÷</button>
+                <div class="row g-2 mb-2">
+                  <div class="col-3">
+                    <button class="btn btn-light w-100" onclick="pressNumber('1')">1</button>
+                  </div>
+                  <div class="col-3">
+                    <button class="btn btn-light w-100" onclick="pressNumber('2')">2</button>
+                  </div>
+                  <div class="col-3">
+                    <button class="btn btn-light w-100" onclick="pressNumber('3')">3</button>
+                  </div>
+                  <div class="col-3">
+                    <button class="btn btn-outline-primary w-100" onclick="pressOperator('+')">+</button>
+                  </div>
                 </div>
-              </div>
-              <div class="row g-2 mb-2">
-                <div class="col-3">
-                  <button class="btn btn-light w-100">7</button>
-                </div>
-                <div class="col-3">
-                  <button class="btn btn-light w-100">8</button>
-                </div>
-                <div class="col-3">
-                  <button class="btn btn-light w-100">9</button>
-                </div>
-                <div class="col-3">
-                  <button class="btn btn-outline-primary w-100">×</button>
-                </div>
-              </div>
-              <div class="row g-2 mb-2">
-                <div class="col-3">
-                  <button class="btn btn-light w-100">4</button>
-                </div>
-                <div class="col-3">
-                  <button class="btn btn-light w-100">5</button>
-                </div>
-                <div class="col-3">
-                  <button class="btn btn-light w-100">6</button>
-                </div>
-                <div class="col-3">
-                  <button class="btn btn-outline-primary w-100">-</button>
-                </div>
-              </div>
-              <div class="row g-2 mb-2">
-                <div class="col-3">
-                  <button class="btn btn-light w-100">1</button>
-                </div>
-                <div class="col-3">
-                  <button class="btn btn-light w-100">2</button>
-                </div>
-                <div class="col-3">
-                  <button class="btn btn-light w-100">3</button>
-                </div>
-                <div class="col-3">
-                  <button class="btn btn-outline-primary w-100">+</button>
-                </div>
-              </div>
-              <div class="row g-2 mb-2">
-                <div class="col-6">
-                  <button class="btn btn-light w-100">0</button>
-                </div>
-                <div class="col-3">
-                  <button class="btn btn-light w-100">.</button>
-                </div>
-                <div class="col-3">
-                  <button class="btn btn-success w-100">=</button>
+                <div class="row g-2 mb-2">
+                  <div class="col-6">
+                    <button class="btn btn-light w-100" onclick="pressNumber('0')">0</button>
+                  </div>
+                  <div class="col-3">
+                    <button class="btn btn-light w-100" onclick="pressDecimal()">.</button>
+                  </div>
+                  <div class="col-3">
+                    <button class="btn btn-success w-100" onclick="calculate()">=</button>
+                  </div>
                 </div>
               </div>
             </div>
