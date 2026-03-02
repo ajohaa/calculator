@@ -104,3 +104,33 @@ function clearAll() {
     setStatus('Cleared')
     updateScreen()
 }
+
+function calculate() {
+    setStatus('')
+    if (storedNumber === null || currentOperator === '' || typedNumberText === '') {
+        setStatus('Please enter a complete expression')
+        updateScreen()
+        return
+    }
+    const secondNumber = Number(typedNumberText)
+    let result = storedNumber
+    if (currentOperator === '+') {
+        result = storedNumber + secondNumber
+    } else if (currentOperator === '-') {
+        result = storedNumber - secondNumber
+    } else if (currentOperator === '*') {
+        result = storedNumber * secondNumber
+    } else if (currentOperator === '/') {
+        if (secondNumber === 0) {
+            setStatus('Cannot divide by zero')
+            updateScreen()
+            return
+        } 
+        result = storedNumber / secondNumber
+    }
+    storedNumber = result
+    currentOperator = ''
+    typedNumberText = ''
+    setStatus('Calculated')
+    updateScreen()
+}
